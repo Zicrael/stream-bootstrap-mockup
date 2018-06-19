@@ -1,0 +1,29 @@
+.logo-text {
+    font-size: 14px;
+
+}
+
+.primary-color {
+    color: #837880;
+}
+
+.secondary-color {
+    color: #D1B4B6;
+}
+
+a {
+    color: #837880;
+    padding: 5px;
+    text-decoration: none !important;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s ease-in-out;
+}
+
+.translate span:first-child{
+    border-right: 2px solid #D1B4B6;
+}
+
+a:hover {
+    color: #D1B4B6;
+    border-bottom: 2px solid #D1B4B6;
+}
