@@ -1,6 +1,9 @@
 .logo-text {
     font-size: 14px;
+}
 
+.main-wrapper {
+    margin-top: 117px;
 }
 
 .primary-color {
@@ -26,4 +29,292 @@ a {
 a:hover {
     color: #D1B4B6;
     border-bottom: 2px solid #D1B4B6;
+}
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background: #ffffff;
+}
+/* ===first section=== */
+
+.first-section-block {
+    height: 748px;
+    background: url('../img/bg1.png');
+    background-size: cover;
+    text-align: center;
+    padding-top: 5rem;
+}
+
+.first-section-inside > h1 {
+    font-size: 84px;
+    color: #837880;
+    padding-bottom: 5rem;
+}
+
+.project-button {
+    font-size: 24px;
+    padding: 26px;
+    width: 303px;
+    border-top: 1.5px solid #837880;
+    border-bottom: 1.5px solid #837880;
+    border-left: 1.5px solid transparent;
+    border-right: 1.5px solid transparent;
+    transition: border 0.3s ease-in-out;
+    background: transparent;
+    color: #837880;
+}
+
+.project-button:hover {
+    border-left: 1.5px solid #837880;
+    border-right: 1.5px solid #837880;
+    color: #837880;
+}
+/* presonalInfo section  */
+
+.section {
+    padding-top: 250px;
+}
+
+.pesonal-info-text {
+    color: #837880;
+}
+
+.pesonal-info-text-title {
+    font-size: 72px;
+}
+
+.pesonal-info-text-main {
+    font-size: 32px;
+}
+
+.pesonal-info-text-small {
+    font-size: 18px;
+}
+
+/* ANGEBOTE */
+
+.project-title {
+    font-size: 72px;
+    padding-bottom: 50px;
+    text-align: center;
+    color: #837880;
+}
+
+#angebote {
+    margin-bottom: 100px;
+}
+
+.angebote-item {
+    width: 20%;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+.angebote-item div:first-child {
+    margin-bottom: 30px;
+}
+
+/* PARTNER */
+#parters {
+    padding-bottom: 5rem;
+}
+
+.partner-title {
+    font-size: 34px;
+}
+
+.slick-prev > i, .slick-next > i {
+    font-size: 48px;
+    width: 100%;
+}
+
+.partner-slide-item {
+    display: flex !important;
+    background: #D1B4B6;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    height: 233px;
+    color: #ffffff;
+}
+.partner-slide-item > img{
+    max-width: 160px;
+}
+
+/* KONTAKT */
+
+#kontakt {
+    padding-bottom: 5rem;
+}
+
+.kontakt-text-title {
+    font-size: 36px;
+}
+
+#callbackForm {
+    border: 1px solid#837880;
+}
+
+/* Plasehorders */
+.form-group {
+    position:relative;  
+}
+  
+.form-label {
+    position: absolute;
+    left: 30px;
+    top: 10px;
+    color: #999;
+    background-color: #fff;
+    z-index: 10;
+    transition: all 0.3s ease-out, font-size 0.3s ease-out;
+}
+  
+.focused .form-label {
+    transform: translateY(-125%);
+    font-size: .75em;
+    left: 15px;
+    margin-top: 10px;
+}
+
+.form-input {
+    position: relative;
+    padding: 12px 0px 5px 0;
+    width: 100%;
+    outline: 0;
+    border: 0;
+    box-shadow: 0 1px 0 0 #e5e5e5;
+    transition: box-shadow 0.3s ease-out;
+}
+
+.form-input:focus {
+    box-shadow: 0 2px 0 0 blue;
+}
+
+.form-input.filled {
+    box-shadow: 0 2px 0 0 lightgreen;
+}
+
+.last {
+    padding-bottom: 50px;
+}
+
+.btn-send {
+    width: 200px;
+    font-size: 24px;
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+}
+
+.kontakt-text {
+    padding-bottom: 100px;
+}
+
+  /* ================= */
+
+#scrollToTop {
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    height: 118px;
+    width: 75px;
+    background: #D1B4B6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#scrollToTop > i { 
+    font-size: 48px;
+    color: #ffffff;
+}
+
+@media (max-width: 1200px) {
+    .first-section-block {
+        height: 450px;
+    }
+    .first-section-inside {
+        padding-top: 0;
+    }
+    
+    .first-section-inside > h1 {
+        font-size: 56px;
+        padding-bottom: 50px;
+    }
+    
+    .project-button {
+        font-size: 24px;
+        padding: 15px;
+    }
+
+    .section {
+        padding-top: 100px;
+    }
+
+    .angebote-item div:first-child img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 992px) {
+    .pesonal-info-text-button {
+        text-align: center;
+    }
+    .partner-slide-item {
+        height: 180px;
+    }
+}
+
+@media (max-width: 768px) {
+    .first-section-block {
+        height: 300px;
+    }
+    
+    .first-section-inside > h1 {
+        font-size: 36px;
+
+    }
+
+    .partner-slide-item {
+        margin: 0;
+    }
+
+    .slick-prev {
+        margin-right: 15px;
+    }
+    .slick-prev , .slick-next {
+
+        width: 100px;
+    }
+    .slick-prev > i , .slick-next > i{
+        font-size: 32px;
+    }
+    #arrow-wrapper {
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    .project-button {
+        font-size: 18px;
+    }
+
+    .project-title {
+        font-size: 56px;
+        padding-bottom: 30px;
+    }
+    .angebote-item {
+        width: 50%;
+    }
+    
+}
+
+@media (max-width: 576px) {
+    .angebote-item {
+        font-size: 14px;
+    }
 }
